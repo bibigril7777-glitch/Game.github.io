@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#18251b">
+  <title>Cambodia Special Forces</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <header>
+      🇰🇭 CAMBODIA SPECIAL FORCES
+      <div>HP: <span id="hp">100</span> |
+        គ្រាប់: <span id="ammo">12/60</span> |
+        សត្រូវ: <span id="enemies">5</span>
+      </div>
+    </header>
+
+    <div id="crosshair">+</div>
+
+    <div id="intro">
+      <h1>🇰🇭 CAMBODIA<br>SPECIAL FORCES</h1>
+      <p>3D FPS • OFFLINE • VS AI</p>
+      <button id="start">ចាប់ផ្ដើមលេង</button>
+    </div>
+
+    <div id="end" class="hidden">
+      <h1 id="result">MISSION COMPLETE</h1>
+      <button id="again">លេងម្ដងទៀត</button>
+    </div>
+
+    <div id="move">
+      <button id="up">▲</button>
+      <div>
+        <button id="left">◀</button>
+        <button id="down">▼</button>
+        <button id="right">▶</button>
+      </div>
+    </div>
+
+    <div id="actions">
+      <button id="reload">↻<small>គ្រាប់</small></button>
+      <button id="jump">⬆<small>លោត</small></button>
+      <button id="shoot">●<small>បាញ់</small></button>
+    </div>
+
+    <div id="help">អូសលើអេក្រង់ ដើម្បីបង្វិលកាមេរ៉ា</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
