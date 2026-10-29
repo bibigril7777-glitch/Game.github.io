@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #18251b;
+  color: white;
+  font-family: Arial, sans-serif;
+  touch-action: none;
+}
+#game {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+#hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #101910b8;
+  font-size: 12px;
+  line-height: 2;
+}
+#crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
+}
+button {
+  pointer-events: auto;
+  color: white;
+  background: #26382bdc;
+  border: 1px solid #ffffff88;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+  touch-action: none;
+}
+button:active {
+  background: #778f5d;
+}
+#move {
+  position: absolute;
+  left: 15px;
+  bottom: 22px;
+  text-align: center;
+  pointer-events: none;
+}
+#move button { pointer-events: auto; }
+#move div {
+  display: flex;
+  gap: 3px;
+}
+#actions {
+  position: absolute;
+  right: 12px;
+  bottom: 22px;
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+}
+#actions small {
+  display: block;
+  font-size: 9px;
+}
+#shoot {
+  width: 68px;
+  height: 68px;
+  background: #a5392f;
+}
+#help {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffffbb;
+  font-size: 10px;
+  white-space: nowrap;
+}
+#intro, #end {
+  position: absolute;
+  inset: 0;
+  background: #07100bdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  pointer-events: auto;
+}
+#intro h1 { line-height: 1.3; }
+#intro p { color: #c8d8bf; }
+#start, #again {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  background: #c5dfa6;
+  color: #152016;
+  padding: 14px 25px;
+  font-weight: bold;
+}
+.hidden { display: none !important; }
